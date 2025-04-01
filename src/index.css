@@ -2,4 +2,53 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.app {
+	width: 400px;
+	margin: auto;
+	margin-top: 5rem;
+}
+
+.header {
+	text-align: center;
+	padding: 1rem 0;
+	background-color: #cecece;
+	border-radius: 15px 15px 0 0;
+}
+
+.header__title {
+	text-transform: uppercase;
+}
+
+.destination {
+	display: flex;
+	flex-direction: row;
+}
+
+.destination__location {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0;
+}
+
+.destination__location--light-grey {
+	background-color: #e2e2e2;
+}
+
+.destination__location--lighter-grey {
+	background-color: #ececec;
+}
+
+.destination__title {
+	text-transform: uppercase;
+	line-height: 60%;
+}
+
+.destination__time {
+	justify-self: end;
+	font-size: 0.7rem;
+	color: #00000066;
 }
