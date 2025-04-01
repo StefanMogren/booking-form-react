@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from './Input';
 import Select from './Select';
+import Button from './Button';
 
 function BookingForm() {
 	return (
@@ -24,6 +25,7 @@ function BookingForm() {
 				labelText='1:a klass'
 				spanClass='order-two'
 			/>
+
 			{/* Select antal biljetter och titel */}
 			<Select
 				options={[1, 2, 3, 4, 5]}
@@ -59,7 +61,6 @@ function BookingForm() {
 			/>
 
 			{/* Checkbox godkänner villkoren */}
-
 			<Input
 				inputType='checkbox'
 				inputName='acceptTerms'
@@ -69,9 +70,12 @@ function BookingForm() {
 				labelText='Jag godkänner villkoren'
 				spanClass='order-one'
 			/>
-			<button className='input-form__button'>Boka biljetter</button>
+
+			<Button
+				buttonClass='input-form__button'
+				buttonText='Boka biljetter'
+			/>
 		</form>
 	);
 }
-
 export default BookingForm;
