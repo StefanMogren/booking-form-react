@@ -11,8 +11,8 @@ function BookingForm() {
 				inputType='radio'
 				inputName='2ndClass'
 				inputId='2ndClass'
-				// inputClass=''
-				labelClass='input-form__field input-form__field--half'
+				inputClass='input-form__radio-checkbox'
+				labelClass='input-form__label input-form__label--flex-row'
 				labelText='2:a klass'
 				spanClass='order-two'
 			/>
@@ -20,8 +20,8 @@ function BookingForm() {
 				inputType='radio'
 				inputName='1stClass'
 				inputId='1stClass'
-				// inputClass=''
-				labelClass='input-form__field input-form__field--half'
+				inputClass='input-form__radio-checkbox'
+				labelClass='input-form__label input-form__label--flex-row'
 				labelText='1:a klass'
 				spanClass='order-two'
 			/>
@@ -29,15 +29,17 @@ function BookingForm() {
 			{/* Select antal biljetter och titel */}
 			<Select
 				options={[1, 2, 3, 4, 5]}
-				labelClass='input-form__field input-form__field--half'
+				labelClass='input-form__label input-form__label--half'
 				labelText='Antal biljetter'
 				selectId='tickets'
+				selectClass='input-form__input-field'
 			/>
 			<Select
 				options={[`Sir`, `Ma'am`, 'Mr.', 'Ms.']}
-				labelClass='input-form__field input-form__field--half'
+				labelClass='input-form__label input-form__label--half'
 				labelText='Titel'
 				selectId='title'
+				selectClass='input-form__input-field'
 			/>
 
 			{/* Input förnamn och efternamn */}
@@ -45,8 +47,8 @@ function BookingForm() {
 				inputType='text'
 				inputName='firstName'
 				inputId='firstName'
-				// inputClass=''
-				labelClass='input-form__field input-form__field--full'
+				inputClass='input-form__input-field order-two'
+				labelClass='input-form__label input-form__label--full'
 				labelText='Förnamn'
 				spanClass='order-one'
 			/>
@@ -54,8 +56,8 @@ function BookingForm() {
 				inputType='text'
 				inputName='secondName'
 				inputId='secondName'
-				// inputClass=''
-				labelClass='input-form__field input-form__field--full'
+				inputClass='input-form__input-field order-two'
+				labelClass='input-form__label input-form__label--full'
 				labelText='Efternamn'
 				spanClass='order-one'
 			/>
@@ -65,8 +67,9 @@ function BookingForm() {
 				inputType='checkbox'
 				inputName='acceptTerms'
 				inputId='acceptTerms'
-				// inputClass=''
-				labelClass='input-form__field input-form__field--full'
+				inputClass='input-form__radio-checkbox'
+				labelClass='input-form__label input-form__label--full
+                input-form__label--flex-row'
 				labelText='Jag godkänner villkoren'
 				spanClass='order-one'
 			/>
