@@ -9,13 +9,14 @@
 	width: 400px;
 	margin: auto;
 	margin-top: 5rem;
+	border-radius: 15px;
+	overflow: hidden;
 }
 
 .header {
 	text-align: center;
 	padding: 1rem 0;
 	background-color: #cecece;
-	border-radius: 15px 15px 0 0;
 }
 
 .header__title {
