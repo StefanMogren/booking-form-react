@@ -1,13 +1,24 @@
 import React from 'react';
 
-function Input(props) {
+function Input({
+	labelClass,
+	labelText,
+	spanClass,
+	inputType,
+	inputName,
+	inputClass,
+	inputId,
+}) {
 	return (
-		<input
-			type={props.type}
-			className={props.className}
-			id={props.id}
-			name={props.name}
-		/>
+		<label className={labelClass} htmlFor={inputId}>
+			<span className={spanClass}>{labelText}</span>
+			<input
+				type={inputType}
+				className={inputClass}
+				id={inputId}
+				name={inputName}
+			/>
+		</label>
 	);
 }
 
