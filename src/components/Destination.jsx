@@ -7,7 +7,7 @@ function Destination() {
 				<h2 className='destination__title'>
 					Stockholm
 					<br />
-					<time className='destination__time' datetime='10:30'>
+					<time className='destination__time' dateTime='10:30'>
 						10.30
 					</time>
 				</h2>
@@ -16,7 +16,7 @@ function Destination() {
 				<h2 className='destination__title'>
 					Göteborg
 					<br />
-					<time className='destination__time' datetime='14:45'>
+					<time className='destination__time' dateTime='14:45'>
 						14.45
 					</time>
 				</h2>
