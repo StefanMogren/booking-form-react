@@ -1,7 +1,11 @@
+import BookingMain from './components/BookingMain';
+import Header from './components/Header';
+
 function App() {
 	return (
-		<div className="app">
-			<h1>Hello React!</h1>;
+		<div className='app'>
+			<Header />
+			<BookingMain />
 		</div>
 	);
 }
